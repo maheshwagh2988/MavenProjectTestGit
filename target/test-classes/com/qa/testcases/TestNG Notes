@@ -1,0 +1,40 @@
+1) TestNG- Next generation - Its Unit test Framework
+Its is also called TDD-Test Driver development 
+
+2) purpose: Design test cases in a Systematic  way
+--Generate HTML Report 
+--Different Annotations  
+--Define test cases depend on Priority/Sequence
+--Dependency feature 
+--Grouping 
+--Data Provider
+ 
+3) Its a Open source i.e free  and its available in the form of JAR file
+4) Its only application only JAVA
+
+5) Install testNG in eclipse
+ 
+6) You can divide TestNg into 3 different Annotations like
+
+I) Pre-Condition  
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod  - It will execute before every @Test Annotations
+
+II) Test condition
+@Test          -It will execute every @Test Annotations
+
+III) Post-Condition
+@AfterMethod  --It will execute After every @Test Annotations
+@AfterClass
+@AfterTest
+@AfterSuite
+
+7)We can ran the test case depending on priority like which test case we need to 1st or last as respective.
+@Test (priority=1) Note: priority is Keyword 
+8)We can also ran test cases depending and Groups like we have 100 test cases and I have to run 20  "Search_page" test cases so can define group 
+Some  20 test cases related to "Regression" and so on we can create a group such scenario  
+@Test (priority=1,groups="Regression" )  Note: groups is Keyword 
+
+8)dependsOnMethods - we have have some dependency on some test case then we can have dependsOnMethods
